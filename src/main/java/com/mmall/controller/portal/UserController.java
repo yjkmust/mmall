@@ -35,6 +35,7 @@ public class UserController {
         httpSession.removeAttribute(Const.CURRENT_USER);
         return ServerResponse.createBySuccess();
     }
+
     @RequestMapping(value="register.do" ,method = RequestMethod.POST)
     @ResponseBody
     public ServerResponse<String> register(User user){
